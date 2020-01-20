@@ -30,7 +30,7 @@ steps:
   event: pull_request.opened
   event:          # a list of the actions that will occur when the step is triggered by an event
   actions:
-  - type: gate
+    left: '%payload.pull_request.title%'
                   # some actions require additional options, those should appear below `type:`
                   # you can execute multiple actions in the `before` block
                   #
