@@ -31,7 +31,7 @@ steps:
   event:          # a list of the actions that will occur when the step is triggered by an event
   actions:
     left: '%payload.pull_request.title%'
-                  # some actions require additional options, those should appear below `type:`
+    operator: ===
                   # you can execute multiple actions in the `before` block
                   #
   # - type:
